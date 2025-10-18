@@ -15,6 +15,13 @@ const Home: FunctionComponent<HomeProps> = () => {
         <div className="col-12 text-center">
           <h1 className="display-3 fw-bold mb-3">📚 Book Collection</h1>
           <p className="lead fs-4">Welcome to your personal digital library</p>
+          <button
+            className="btn btn-dark "
+            style={{}}
+            onClick={() => (window.location.href = "/register")}
+          >
+            Logout
+          </button>
         </div>
       </div>
 
