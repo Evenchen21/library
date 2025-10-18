@@ -1,8 +1,13 @@
 import { FunctionComponent } from "react";
+import React from "react";
+import * as Register from "../components/Register";
 
 interface HomeProps {}
 
 const Home: FunctionComponent<HomeProps> = () => {
+  // Example user object; replace with actual user data as needed
+  const user = { fullName: "User" };
+
   return (
     <div className="container-fluid">
       {/* Header Section */}
@@ -19,10 +24,7 @@ const Home: FunctionComponent<HomeProps> = () => {
           <div className="col-md-8 text-center">
             <div className="alert alert-success" role="alert">
               <h2 className="alert-heading">🎉 Welcome!</h2>
-              <p className="mb-0">
-                You have successfully logged in to your Book Collection. Start
-                exploring and managing your favorite books!
-              </p>
+              <p className="mb-0"> {user.fullName}</p>
             </div>
           </div>
         </div>

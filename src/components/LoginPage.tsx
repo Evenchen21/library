@@ -22,12 +22,10 @@ const LoginPage: FunctionComponent<LoginPageProps> = () => {
       userService
         .loginUser(values.email, values.password)
         .then((result: any) => {
-          console.log("Login successful:", result.data);
           // Navigate to home page after successful login
           window.location.href = "/Home";
         })
         .catch((error: any) => {
-          console.log("Login error:", error);
           alert("Login failed: " + error.message);
         });
     },
@@ -37,7 +35,7 @@ const LoginPage: FunctionComponent<LoginPageProps> = () => {
     <div className="container mt-5">
       <div className="alert alert-secondary" role="alert">
         <h2 className="display-5 text-center text-secondary">
-          Book Collection
+          📚 Book Collection
         </h2>
       </div>
       <div className="row justify-content-center">

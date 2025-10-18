@@ -42,7 +42,7 @@ const Register: FunctionComponent<RegisterProps> = () => {
     <div className="container mt-5">
       <div className="alert alert-secondary" role="alert">
         <h2 className="display-5 text-center text-secondary">
-          Book Collection
+          📚 Book Collection
         </h2>
       </div>
       <div className="row justify-content-center">
